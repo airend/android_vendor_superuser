@@ -1,0 +1,7 @@
+# su daemon
+service su_daemon /system/xbin/su --daemon
+    class main
+    user root
+    group root
+    oneshot
+    seclabel u:r:su:s0
